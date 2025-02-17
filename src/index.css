@@ -1,0 +1,242 @@
+.container {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+header {
+  background: url(./assets/headerimg.svg);
+  height: 156px;
+  display: flex;
+  justify-content: end;
+  padding: 0 100px;
+  align-items: center;
+}
+
+header .darkMod {
+  padding: 10px 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.content {
+  /* border: 1px solid black; */
+  max-width: 1110px;
+  margin: auto;
+}
+
+
+form {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.chakked {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.chakked label {
+  font-weight: normal;
+}
+
+.chakked input {
+  margin-left: 10px;
+}
+
+.selects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.selects select {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.chak {
+  margin-bottom: 15px;
+}
+
+.chak h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.right, .left {
+  width: 48%;
+  display: inline-block;
+}
+
+.right label, .left label {
+  margin-right: 10px;
+}
+
+.right input, .left input {
+  margin-left: 5px;
+}
+
+.seve {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.seve:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+
+.cards {
+  max-width: 1110px;
+  margin: 20px auto;
+}
+
+.cards .card {
+  width: 100%;
+  display: flex;
+  padding: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.card .cardRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cardRight img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.Pages {
+  display: flex;
+  align-items: center;
+}
+
+.Pages h3 {
+  color: #5CA5A5;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.Pages p {
+  padding: 7px 8px 6px 8px;
+  background-color: #5CA5A5;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.Pages .t {
+  background-color: #2B3939;
+  margin-left: 8px;
+}
+
+.title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title ul {
+  display: flex;
+  color: #7C8F8F;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardLeft ul{
+  display: flex;
+  gap: 16px;
+  color: #5CA5A5;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cardLeft ul li{
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #5ca5a530;
+}
+
+.delete {
+  padding: 10px 8px;
+  border-radius: 8px ;
+  border: none;
+  background-color: red;
+  color: white;
+  margin-top: 10px;
+}
+.edit{
+  margin-top: 10px;
+  padding: 10px 8px;
+  border-radius: 8px ;
+  border: none;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  margin-left: 10px;
+}
