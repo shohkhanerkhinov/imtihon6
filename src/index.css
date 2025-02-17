@@ -103,16 +103,19 @@ label {
   margin-bottom: 10px;
 }
 
-.right, .left {
+.right,
+.left {
   width: 48%;
   display: inline-block;
 }
 
-.right label, .left label {
+.right label,
+.left label {
   margin-right: 10px;
 }
 
-.right input, .left input {
+.right input,
+.left input {
   margin-left: 5px;
 }
 
@@ -210,14 +213,15 @@ button.seve:hover {
   font-weight: 500;
 }
 
-.cardLeft ul{
+.cardLeft ul {
   display: flex;
   gap: 16px;
   color: #5CA5A5;
   font-size: 16px;
   font-weight: 700;
 }
-.cardLeft ul li{
+
+.cardLeft ul li {
   padding: 5px 10px;
   border-radius: 4px;
   background-color: #5ca5a530;
@@ -225,18 +229,56 @@ button.seve:hover {
 
 .delete {
   padding: 10px 8px;
-  border-radius: 8px ;
+  border-radius: 8px;
   border: none;
   background-color: red;
   color: white;
   margin-top: 10px;
 }
-.edit{
+
+.edit {
   margin-top: 10px;
   padding: 10px 8px;
-  border-radius: 8px ;
+  border-radius: 8px;
   border: none;
   background-color: rgb(0, 123, 255);
   color: white;
   margin-left: 10px;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .container {
+  background-color: #333;
+}
+
+.dark .card {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark .input,
+.dark select,
+.dark button {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark .seve {
+  background-color: #666;
+  color: #fff;
+}
+
+.dark .delete {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.dark .edit {
+  background-color: #81c784;
+  color: #fff;
 }

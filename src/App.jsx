@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import URLimg from './assets/test.svg';
-
 import './App.css';
 import './index.css';
 
@@ -21,6 +20,7 @@ function App() {
     react: false,
   });
   const [editId, setEditId] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const savedCards = JSON.parse(localStorage.getItem('cards')) || [];
@@ -50,7 +50,7 @@ function App() {
 
     let copie = [...card];
     if (editId) {
-      copie = copie.map(c => c.id == editId ? cardd : c);
+      copie = copie.map(c => c.id === editId ? cardd : c);
     } else {
       copie.push(cardd);
     }
@@ -85,10 +85,14 @@ function App() {
     setFeaturedchecked(cardData.featuredchecked);
   }
 
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+
   return (
-    <div className='container'>
+    <div className={`container ${darkMode ? 'dark' : ''}`}>
       <header>
-        <button className='darkMod'>DARKMOD</button>
+        <button className='darkMod' onClick={toggleDarkMode}>
+          {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
+        </button>
       </header>
       <div className="content">
         <div className="form">
